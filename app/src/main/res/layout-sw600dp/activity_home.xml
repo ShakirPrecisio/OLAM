@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+    <include
+        layout="@layout/app_bar_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollNav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                       android:background="@drawable/gsez_logo_new"   />
+               <!-- <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/profile_circular_background"   />-->
+
+              <!--      <RelativeLayout
+                        android:id="@+id/relvEditProfile"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_134sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:background="@drawable/circle_image_with_stroke">
+                        <ImageView
+                            android:id="@+id/ivEditProfile"
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/add_user" />
+                    </RelativeLayout>-->
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Daina Margan"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMenuList"
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:focusableInTouchMode="true"
+                        android:overScrollMode="never"
+                        android:descendantFocusability="blocksDescendants"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/row_app_menu_item"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Ver. 1.0_PROD"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/gray_500"
+                    android:textSize="@dimen/_12sdp"
+                    />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+

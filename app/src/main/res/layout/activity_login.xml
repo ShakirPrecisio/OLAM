@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.activity.LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <!--<ImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/timber_login" />-->
+                <ImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/gsez_logo_new" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/gray_1100"
+                    android:gravity="center"
+                    android:text="@string/timer_inventory_management"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linContent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_centerInParent="true">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        style="@style/TextAppearance.App.TextInputLayout"
+        android:textColorHint="@color/text_color"
+        app:hintTextColor="@color/text_color">
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:drawableStart="@drawable/user_icon"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:letterSpacing="0.01"
+            android:lineHeight="@dimen/_15sdp"
+            android:lineSpacingMultiplier="0.8"
+            android:minHeight="@dimen/_35sdp"
+            android:textSize="@dimen/_13sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/text_color"
+        app:hintTextColor="@color/text_color">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:lineSpacingMultiplier="0.8"
+            android:letterSpacing="0.01"
+            android:textColor="@color/text_color"
+            android:lineHeight="@dimen/_15sdp"
+            android:drawableStart="@drawable/padlock"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@null"
+            android:layout_gravity="center_vertical|bottom"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/_35sdp"
+            android:textSize="@dimen/_13sdp"
+            android:hint="@string/password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/isAdLoginSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:thumbTint="@color/colorPrimaryDark"
+            android:checked="false"
+            android:text="AD Login"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/linContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_38sdp"
+        android:layout_marginEnd="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/curve_button"
+        android:padding= "@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"/>
+        </RelativeLayout>
+
+</RelativeLayout>

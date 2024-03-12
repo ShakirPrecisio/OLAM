@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "930546976340",
+    "project_id": "olam-1da9b",
+    "storage_bucket": "olam-1da9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930546976340:android:0dc0dc82ca66c2c458cfc1",
+        "android_client_info": {
+          "package_name": "com.kemar.olam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930546976340-f6a2kr6p0ve38416u1lrtpdf3c5mrsf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kemar.olam",
+            "certificate_hash": "63b72329340f3e8c2284d56f308c776ba708686d"
+          }
+        },
+        {
+          "client_id": "930546976340-3pei0omlcie6gj026p8ukpqsfsk2vl8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDilG1FyJzP2ccArXhSr72W-LiVV8ZJGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930546976340-3pei0omlcie6gj026p8ukpqsfsk2vl8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

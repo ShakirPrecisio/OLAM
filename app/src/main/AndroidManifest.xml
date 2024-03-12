@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kemar.olam">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".utility.MyApplication"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode">
+        <service
+            android:name=".service.ForestryService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity
+            android:name=".offlineData.activity.PdfViewerExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".offlineData.activity.PdfCreatorExampleActivity"
+            android:exported="false" />
+        <activity android:name=".offlineData.activity.LogOfflineActivity" />
+        <activity android:name=".offlineData.activity.OfflineMainActivity" />
+        <activity android:name=".offlineData.activity.BorderauListActivity" />
+
+        <receiver
+            android:name=".service.CheckConnectivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".bluetooth_printer.fragment.ReceiptDemo" />
+        <activity android:name=".bluetooth_printer.activity.PrinterSelectionActivity" /> <!-- android:usesCleartextTraffic="true" -->
+        <activity android:name=".login.activity.ShowPDFPreview" /> <!-- <activity android:name=".bc_print_reprint_edit.activity.BcSearchEditActivity"></activity> -->
+        <activity android:name=".dashboard.activity.PrintActivity" />
+        <activity android:name=".dashboard.activity.DigitalSignatureActivity" />
+        <activity android:name=".dashboard.activity.ScanSDKActivity" />
+        <activity android:name=".dashboard.activity.BarcodeScanActivity" />
+        <activity android:name=".dashboard.activity.BarCodeGenerateActivity" />
+
+        <service android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity
+            android:name=".dashboard.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" /> <!-- <uses-library android:name="com.symbol.emdk" /> -->
+        <activity
+            android:name=".dashboard.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login.activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.kemar.olam"
+                    android:path="/0O5HHSYeAUhAU2Wfi6fGTaDM9k0="
+                    android:scheme="msauth" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kemar.olam.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Forestry Tree Quality List-->
+    <string-array name="forestry_tree_quality_items">
+        <item>Q1: Good quality, without any defect</item>
+        <item>Q2: Good quality with little defects</item>
+        <item>Q3: Medium quality</item>
+        <item>Q4: Bad quality with a lot of defects</item>
+    </string-array>
+
+</resources>

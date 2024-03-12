@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/_8sdp"
+        android:background="@drawable/green_cirlce_image">
+
+        <ImageView
+            android:id="@+id/ivLogCancel"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/icon_cancel"
+            android:contentDescription="@string/image" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Log Cutting Scan Layout-->
+                <LinearLayout
+                    android:id="@+id/layoutLogCutting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Site logbook number"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linSiteLogbookNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtSiteLogBookNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Felling ID"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:id="@+id/linFellingID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_weight="0.5"
+                                    android:background="@drawable/bg_for_editext_non_editable"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/edt_FellingID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/_2sdp"
+                                        android:layout_weight="0.5"
+                                        android:backgroundTint="@color/white"
+                                        android:drawableTint="@color/gray_400"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:singleLine="true"
+                                        android:textColor="@color/log_text_color"
+                                        android:textColorHint="@color/log_text_color"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.4"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/edt_log_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/_2sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:text="/"
+                                        android:textColor="@color/log_text_color"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linLogID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_weight="1.1"
+                                    android:visibility="gone"
+                                    android:background="@drawable/bg_for_editext_non_editable"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/txtLogID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/_2sdp"
+                                        android:layout_weight="1.1"
+                                        android:backgroundTint="@color/white"
+                                        android:drawableTint="@color/gray_400"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:singleLine="true"
+                                        android:textColor="@color/log_text_color"
+                                        android:textColorHint="@color/log_text_color"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--  <LinearLayout
+                              android:layout_height="wrap_content"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_weight="1">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="@dimen/_11sdp"
+                                  android:text="@string/_long"
+                                  android:layout_marginStart="@dimen/_5sdp"
+                                  android:textColor="@color/colorPrimaryDark"
+                                  android:fontFamily="@font/poppins_semibold"
+                                  android:layout_centerInParent="true"
+                                  android:layout_centerHorizontal="true"/>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:background="@drawable/bg_for_editest"
+                              android:layout_marginStart="@dimen/_5sdp">
+                              <EditText
+
+                                  android:id="@+id/edtLong"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/log_text_color"
+                                  android:fontFamily="@font/poppins_regular"
+                                  android:layout_gravity="center"
+                                  android:singleLine="true"
+                                  android:textSize="@dimen/_12sdp"
+                                  android:maxLength="4"
+                                  android:inputType="number"
+                                  android:layout_marginStart="@dimen/_2sdp"
+                                  android:drawableTint="@color/gray_400"
+                                  android:textColorHint="@color/log_text_color"
+                                  android:backgroundTint="@color/white"
+                                  />
+                          </LinearLayout>
+                          </LinearLayout>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Min Dia (cm)"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linMinDia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtMinDia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:singleLine="true"
+                                    android:inputType="number"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Max Dia (cm)"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linMaxDia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtMaxDia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:singleLine="true"
+                                    android:inputType="number"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Avg Dia (cm)"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linAvgDia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtAvgDia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:singleLine="true"
+                                    android:inputType="number"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Length (cm)"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linLogLength"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtLogLength"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:singleLine="true"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Volume (cbm)"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/linVolume"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/bg_for_editext_non_editable"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/txtVolume"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/gray_200"
+                                    android:enabled="false"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:singleLine="true"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/text_grey_color"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Company"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:id="@+id/linCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_for_editest"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtCompany"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:backgroundTint="@color/white"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="none"
+                                android:singleLine="true"
+                                android:text="@string/select"
+                                android:textColor="@color/txt_spinner_color"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/_12sdp"
+                                app:drawableRightCompat="@drawable/bg_down_arrow_"
+                                app:drawableTint="@color/bg_arrow_tint" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="@string/location"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:id="@+id/linLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_for_editest"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtLogLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:backgroundTint="@color/white"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="none"
+                                android:singleLine="true"
+                                android:text="@string/select"
+                                android:textColor="@color/txt_spinner_color"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/_12sdp"
+                                app:drawableRightCompat="@drawable/bg_down_arrow_"
+                                app:drawableTint="@color/bg_arrow_tint" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Cuber"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:id="@+id/linCuber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_for_editest"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtCuber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:backgroundTint="@color/white"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="none"
+                                android:singleLine="true"
+                                android:text="@string/select"
+                                android:textColor="@color/txt_spinner_color"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/_12sdp"
+                                app:drawableRightCompat="@drawable/bg_down_arrow_"
+                                app:drawableTint="@color/bg_arrow_tint" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linAddLog"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/layoutLogCutting"
+                    android:background="@color/confirm_print_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_16sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:text="Add Log"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

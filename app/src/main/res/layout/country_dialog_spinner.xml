@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/spinner_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="start"
+            android:layout_weight="0.6"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/_14sdp"
+            android:text="Select"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1.4"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_gravity="end"
+                android:src="@drawable/icon_cancel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_below="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_300"/>
+
+        <LinearLayout
+            android:id="@+id/linSeach"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/grey_curve_stroke"
+            android:layout_marginTop="@dimen/_5sdp"
+           android:weightSum="2">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchCountry"
+            android:queryHint="Search by name"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="@dimen/_35sdp"/>
+            <LinearLayout
+                android:id="@+id/linCancle"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+              android:layout_gravity="center"
+                android:layout_weight="1.8">
+        <ImageView
+            android:id="@+id/ivCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_gravity="right"
+              android:paddingRight="@dimen/_10sdp"
+            android:src="@drawable/icon_cancel"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linRecycler"
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_300"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

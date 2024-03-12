@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:id="@+id/connection_screen_layout"
+    tools:context=".bluetooth_printer.activity.PrinterSelectionActivity">
+
+    <TextView
+        android:id="@+id/savedPrinterText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_printer"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@+id/savedPrinterId"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/none"/>
+
+    <Button
+        android:id="@+id/discoverPrintersButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discover_printers" />
+
+    <TextView
+        android:id="@+id/selectPrinterText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/search_printer_banner"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="20.0sp" />
+
+    <ListView
+        android:id="@+id/discoveredPrintersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.activity.BarCodeGenerateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <EditText
+            android:layout_below="@+id/toolbars"
+            android:id="@+id/editTextProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:ems="10"
+          android:singleLine="true"
+          android:maxLength="10"
+            android:hint="Add Data to generate barcode"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_below="@+id/editTextProductId"
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Generate" />
+
+          <!--  <Button
+                android:id="@+id/buttonScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/scan" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_below="@+id/test"
+            android:id="@+id/imageViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp" />
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Scan Barcode" />
+
+
+
+        <TextView
+            android:id="@+id/txtBarcodeResult"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            />
+
+
+        <Button
+            android:id="@+id/btnDigitalSign"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Digital Signature" />
+
+
+        <Button
+            android:id="@+id/btnGeneratePDF"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Generate N Print PDF" />
+    </LinearLayout>
+</RelativeLayout>

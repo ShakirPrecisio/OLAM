@@ -1,0 +1,380 @@
+<resources>
+    <string name="app_name">GSEZ TT</string>
+
+
+    <!--     Drawer Menus    -->
+    <string name="dashboard">Dashboard</string>
+    <!-- <string name="bordereau_module">Bordereau Module</string>-->
+    <string name="bordereau_module">Barcode Entry</string>
+    <string name="bc_re_print_n_edit">Bc Re-Print &amp; Edit</string>
+    <string name="loading_wagons">Loading Wagons</string>
+    <string name="origin_verification">Origin Verification</string>
+    <string name="inspection_n_sales">Inspection / Sales</string>
+    <string name="drawer_delivery_management">Delivery Management</string>
+    <string name="delivery_management">Delivery\nManagement</string>
+    <string name="logout">Logout</string>
+    <string name="content_des">image</string>
+    <string name="session_expiry_">Your session has been Expire\n Please click Ok button to start new session</string>
+    <string name="ok">Ok</string>
+
+    <!--    Language   -->
+    <string name="english">English</string>
+    <string name="french">French</string>
+
+    <!--    DashBoard Module   -->
+    <string name="barcode_entry">Barcode Entry</string>
+    <string name="loading_n_declration">Loading &amp;\nDeclaration</string>
+    <string name="loading_n_declration_">Loading &amp; Declaration</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+
+    <!--     Home/Login Module    -->
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <!--<string name="timer_inventory_management">Timber Inventory\nManagement</string>-->
+    <string name="timer_inventory_management">GSEZ Timber\nTrading</string>
+
+    <string name="no_internet">Please Check Internet Connection</string>
+    <string name="title_loading_wagons">Loading Wagons</string>
+    <string name="title_bc_re_print">BC Re-Print &amp; Edit</string>
+    <string name="title_barcode_entrie">Barcode Entry</string>
+
+
+    <!--     Add Header List    -->
+    <string name="select">Select</string>
+    <string name="select_all">Select All</string>
+    <string name="user_history_">User History</string>
+    <string name="origin_cfat">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="loading_location">Loading Location</string>
+    <string name="truck_no">Truck No</string>
+    <string name="transporter">Transporter</string>
+    <string name="forest">Forest</string>
+    <string name="under_maintenance">Under Maintenance</string>
+    <string name="aac">AAC</string>
+    <string name="distance">Distance</string>
+    <string name="fsc">FSC</string>
+    <!--  <string name="quality">Quality</string>-->
+    <string name="Leude_chargement">Leude Chargement</string>
+    <string name="vehicle_no">Vehicle No</string>
+    <string name="bordereu_date">Bordereau Date</string>
+    <string name="stock_declared_date">Stock Declared Date</string>
+    <string name="date">Bordereau Date :&#160;</string>
+    <string name="_date_">Date :&#160;</string>
+    <string name="date_">Date</string>
+    <string name="bordereau_space">RecordDocNo :&#160;</string>
+    <string name="Boreau_no">Bordereau No</string>
+    <string name="bordereu_no_">Bordereau No :&#160;</string>
+    <string name="Boreau_type">Bordereau Type</string>
+
+    <string name="total_found">Total %1$d Found</string>
+    <string name="logcount_log_no">%1$d.Log No :&#160;</string>
+    <string name="scan">Scan</string>
+    <string name="rescan">Re-Scan</string>
+    <string name="total_tonnage">Total Tonnage :&#160;</string>
+    <string name="retry">Retry</string>
+
+    <string name="electronic_bordereau">&#160;Electronic</string>
+    <string name="manual_bordereau">&#160;Manual</string>
+
+    <string name="truck">&#160;Truck</string>
+    <string name="wagon">&#160;Wagon</string>
+    <string name="barge">&#160;Barge</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel_">Cancel</string>
+    <string name="reject">Reject</string>
+
+    <!--    Add Logs List   -->
+    <string name="log_no">Log No</string>
+    <string name="log_no_">Log No :</string>
+    <string name="plaque_no">Plaque No</string>
+    <string name="dia_mesurement">Dia Mesurement</string>
+    <string name="essence">Essence</string>
+    <string name="quality">Quality</string>
+    <string name="dia">Dia1</string>
+    <string name="dia2">Dia2</string>
+    <string name="dia_3">Dia3</string>
+    <string name="dia_4">Dia4</string>
+    <string name="_long">Long</string>
+    <string name="cbm">CBM</string>
+    <string name="volume">Volume</string>
+    <string name="confirm_n_print">Confirm &amp; Print</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="stock_posting">Stock Posting</string>
+    <string name="print">Print</string>
+    <string name="declare">Declare</string>
+    <string name="declaration">Declaration</string>
+    <string name="deleted_log_list">Deleted Log Listing</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">CANCEL</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="do_you_want_to_proceed">Do you want to proceed with this operation</string>
+    <string name="you_are_not_a_super_user">You are not a super user</string>
+    <string name="no_data_found">Data Not Found.</string>
+    <string name="no_offline_data_found">Offline Data  Not Found.</string>
+    <string name="no_logs_found">Logs Not Found.</string>
+    <!--  <string name="no_logs_found">No logs found,\nplease add log.</string>-->
+    <!--    User History   -->
+    <string name="forest_wagon_no">Forest/Wagon No :&#160;</string>
+    <string name="_wagon_no">Wagon No :&#160;</string>
+    <string name="_truck_no">Truck No :&#160;</string>
+    <string name="_barge_no">Barge No :&#160;</string>
+    <string name="tonnage_space">Tonnage :&#160;</string>
+    <string name="cbm_spcae">CBM :&#160;</string>
+    <string name="inspection_">Inspection :&#160;</string>
+    <string name="essence_space">Essence :&#160;</string>
+    <string name="supplier_space">Supplier :&#160;</string>
+    <string name="forest_">Forest :&#160;</string>
+    <string name="truck_no_">Truck No :&#160;</string>
+    <string name="Boreau_no_space">Bordereau No :&#160;</string>
+    <string name="customer_name_space">Customer Name :&#160;</string>
+    <string name="grade_name_space">Grade Name :&#160;</string>
+    <string name="manual_Boreau_no_space">Manual Bordereau :&#160;</string>
+    <string name="electronic_Boreau_no_space">Electronic Bordereau :&#160;</string>
+    <string name="no_of_logs">No Of Logs :&#160;</string>
+    <string name="barcode_entries">Barcode Entry</string>
+
+    <!--    Loading & Declaration   -->
+    <string name="confirm_n_print_">Confirm &amp;\nPrint</string>
+    <string name="generate_master_barcode">Generate Master\nBarcode</string>
+    <string name="upload_take_photo">Upload/Take\nPhoto</string>
+    <string name="gsez__decleration">GSEZ Declaration</string>
+    <string name="forester_declaration">Forester Declaration</string>
+    <string name="log_deleted_successfully">Log deleted successfully.</string>
+
+    <!--    Origin Verification   -->
+    <string name="forest_supplier">Forest Supplier</string>
+    <string name="location">Location</string>
+    <string name="select_bordereau_for_generating_pdf">Select bordereau for generating pdf</string>
+    <string name="select_bordereau_for_declare">Select bordereau for declare</string>
+    <string name="scan_barcod">Scan Barcode</string>
+
+    <!--    Sales & Inspections   -->
+    <string name="proceed_to__inspection">Proceed To Inspection</string>
+    <string name="_wagon_no_">Wagon No :&#160;</string>
+    <string name="wagon_no">Wagon No</string>
+    <string name="price">Price</string>
+    <string name="refraction">Refraction %</string>
+    <string name="cust_name">Customer Name</string>
+    <string name="responsible_customer">Responsible - Customer</string>
+    <string name="grader_GSEZ">Grader - GSEZ</string>
+    <string name="tracer_charges">Tracer Charges</string>
+    <string name="grade">Grade</string>
+    <string name="loading_incaharge">Loading Incharge</string>
+    <string name="parc_de_reception">Parc De Reception</string>
+    <string name="Approval_list">Approval List</string>
+    <string name="delivered_list">Delivered List</string>
+    <string name="revoke">Revoke</string>
+    <string name="return_">Return</string>
+    <string name="instock">Instock</string>
+    <string name="representative_sign">Digital Signature Sez Representative</string>
+    <string name="customer_sign">Digital Signature Customer</string>
+    <string name="sales_inspection">Sales Inspection</string>
+    <string name="ground_sales">Ground Sales</string>
+
+    <!--    Ground Inspections   -->
+    <string name="inspeection_no_">Inspection No :&#160;</string>
+    <string name="customer_name_">Customer Name :&#160;</string>
+    <string name="date_space">Date :&#160;</string>
+    <string name="grade_name_">Grade Name :&#160;</string>
+
+
+    <!--    Delivery Management   -->
+    <string name="laodding_location">Loading Location</string>
+    <string name="confirm_for_approval">Confirm For Approval</string>
+    <string name="confirm_for_delivery">Confirm Delivery</string>
+    <string name="refraction_diam">Refraction Diam</string>
+    <string name="refraction_length">Refraction Length</string>
+    <string name="confirm_billing">Confirm Billing</string>
+    <string name="remark">Remark</string>
+    <string name="comment">Comment</string>
+    <!--    for constant values-->
+    <string name="image">Images</string>
+
+
+    <!--Ted Permission-->
+    <string name="Permission_Denied">Permission denied</string>
+    <string name="Please_give_permission_for_app_functionality">Please give permission for app functionality</string>
+    <string name="If_you_reject_permission_you_can_not_use_this_service">If you reject permission,you can not use this service</string>
+    <string name="Please_turn_on_permissions_at">Please turn on permissions at [Setting] > [Permission]</string>
+    <string name="unable_to_process">Unable to process your request please try after some time</string>
+
+    <string name="activity_intent_filter_action">com.zebra.datacapture1.ACTION</string>
+    <string name="activity_action_from_service">com.zebra.datacapture1.service.ACTION</string>
+    <string name="activity_action_from_nautiz">android.intent.action.SCANRESULT</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Validation Msg-->
+    <string name="Please_enter_log_no">Please enter log no</string>
+
+    <!--Alert Msg-->
+    <string name="are_you_sure_want_to_delete_all_selected_log">Are you sure want to delete all selected log?</string>
+    <string name="please_select_logs">Please select logs</string>
+
+
+    <!--      Validations MSG        -->
+    <string name="duplicate_log_found">Log number already exits.</string>
+    <string name="log_has_been_selected">log has been selected</string>
+    <string name="inspection_no_not_found">Inspection number not found.</string>
+    <string name="pdf_not_found">PDF not found.</string>
+    <string name="empty_wagon">Wagon number should not be empty</string>
+    <string name="empty_forest">Forest should not be empty</string>
+    <string name="empty_bordereau_no">Bordereau no should not be empty</string>
+    <string name="customer_sign_error">Customer Sign should not be empty</string>
+    <string name="representative_sign_error">Representative Sign should not be empty</string>
+    <string name="select_transporter">Please select transporter</string>
+    <string name="select_vehicle_no">Please select vehicle no</string>
+    <string name="maximum_long_value">Maximum allowed Long value is 2000</string>
+    <string name="maximum_dia_value">Maximum allowed dia value is 250</string>
+    <string name="after_slash_should_not_allow_more_than_four">Should not allowed more than 4</string>
+    <string name="please_enter_valid_log_no">Please enter valid log no</string>
+    <string name="long_value_greater_than_dia">Long value should be greater than average diameter</string>
+    <string name="dia_smaller_than_long">Dia value should be smaller than Long</string>
+
+    <!--     Borddereuu Header Validations MSG        -->
+    <string name="please_select_transport_mode">Please select Transport mode</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_enter_bordereu_no">Please enter bordereau number</string>
+    <string name="please_select_forest">Please select forest</string>
+    <string name="please_select_origin">Please Select origin</string>
+    <string name="please_select_fsc">Please select FSC</string>
+    <string name="please_select_loading_location">Please select loading location</string>
+    <string name="please_select_truck_number">Please select truck number</string>
+    <string name="please_enter_truck_number">Please enter truck number</string>
+    <string name="please_select_leuchargement">Please select leude chargement</string>
+    <string name="please_select_destination">Please select destination</string>
+    <string name="please_select_transporter">Please select transporter</string>
+    <string name="please_select_distance">Please select distance</string>
+    <string name="please_select_vehicle_number">Please select vehicle number</string>
+    <string name="please_enter_vehicle_number">Please enter valid vehicle number</string>
+    <string name="please_select_aac">Please select AAC</string>
+
+    <string name="please_select_essesnce">Please select essence</string>
+    <string name="please_enter_dia">Please enter dia</string>
+    <string name="please_enter_long">Please enter long</string>
+    <string name="please_enter_cbm">Please enter CBM</string>
+    <string name="please_select_quality">Please select quality</string>
+    <string name="please_select_parc_d_reception">Please Select Parc De Reception</string>
+    <string name="please_select_customer_name">Please select customer name</string>
+    <string name="please_select_grader_gsez">Please select grader-GSEZ</string>
+    <string name="please_select_grade">Please select grade</string>
+    <string name="please_enter_price">Please enter price</string>
+    <string name="refraction_value_should_be_less_than_">Maximum allowed Refraction % value is 10</string>
+    <string name="refraction_long_should_be_less_than_">Maximum allowed Refraction long is 500</string>
+
+
+    <!--      Alert Msg        -->
+    <string name="are_you_sure_want_to_update_log">Are you sure want to update log?</string>
+    <string name="are_you_sure_want_to_delete_log">Are you sure want to delete log?</string>
+    <string name="are_you_sure_want_to_print_log">Are you sure want to print log?</string>
+    <string name="are_you_sure_want_to_add_log_data">Are you sure want to add log data?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure want to logout?</string>
+    <string name="are_you_sure_you_want_to_add_data_for_no_inspection">Are you sure want to add data for no inspection?</string>
+    <string name="are_you_sure_you_want_to_reject_inspection">Are you sure want to reject inspection?</string>
+
+
+    <!--      Status        -->
+    <string name="inspection">Inspection</string>
+    <string name="no_inspection">No Inspection</string>
+    <string name="pending">Pending</string>
+    <string name="in_transit">In Transit</string>
+    <string name="recieved">Received</string>
+    <string name="delivered">Delivered</string>
+
+    <string name="reprint">RePrint</string>
+    <string name="wating_for_approval">Waiting For Approval</string>
+
+
+    <string name="user_history">User History</string>
+    <string name="approval_history">ApprovalHistory</string>
+    <string name="ebordereau_no">eBordereau No</string>
+    <string name="discover_printers">Discover Printers</string>
+    <string name="none">None</string>
+    <string name="saved_printer">Saved Printer</string>
+    <string name="search_printer_banner">Click Printer from list to print barcode</string>
+    <string name="be">BE</string>
+    <string name="br">BR</string>
+    <string name="lw">LW</string>
+    <string name="dm">DM</string>
+    <string name="si">SI</string>
+    <string name="ov">OV</string>
+    <string name="fm">FM</string>
+
+    <string name="under_bark">Under bark</string>
+    <string name="under_sap">UnderSap</string>
+    <string name="_avg_dia">Average Dia</string>
+    <string name="dia1">Dia 1</string>
+    <string name="a_d">AD</string>
+    <string name="please_select_location">Please Select Location</string>
+    <string name="please_select_incharge">Please Select In-charge</string>
+    <string name="gesz">Gesz</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="offline_data"><u>Sync data</u></string>
+    <string name="bordereau_successful">Bordereau save successful</string>
+    <string name="bordereau_submit_successful">Bordereau submit successful</string>
+    <string name="loading_wagon_save_successful">Loading wagon save successful</string>
+    <string name="loading_wagon_submit_successful">Loading wagon submit successful</string>
+    <string name="loading_wagon_declaration_successful">Loading wagon declaration successful</string>
+    <string name="bordereau_update_successful">Bordereau update successful</string>
+    <string name="loading_wagon_update_successful">Loading wagon update successful</string>
+    <string name="physical_count">Physical Count</string>
+    <string name="barcode_Number">Barcode Number</string>
+    <string name="party_name">Party Name</string>
+
+
+    <string name="text_paragraph_example">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_print">Print</string>
+    <string name="text_share">Share</string>
+    <string name="text_generated_file_error">Generated File is null or does not exist!</string>
+    <string name="text_create_test_pdf">Create Test Pdf</string>
+    <string name="text_create_html_pdf">Create Pdf From HTML</string>
+    <string name="text_example">Example</string>
+    <string name="text_edit_html_pdf">Edit HTML Pdf</string>
+    <string name="app_icon_license">App Icon made by Freepik from www.flaticon.com</string>
+    <string name="pdf_icon_license">PDF Icon made by Google from www.flaticon.com</string>
+    <string name="text_create_pdf">Create PDF</string>
+    <string name="please_enter_wagon_number">Please Enter Wagon Number</string>
+    <string name="please_select_barge_number">Please Enter Barge Number</string>
+
+    <string name="forestry_management">Forestry\nManagement</string>
+    <string name="no_data">No Data</string>
+    <string name="tree_id_title">Tree id :&#160;</string>
+    <string name="dia_title">Dia :&#160;</string>
+    <string name="quality_title">Quality :&#160;</string>
+    <string name="species_title">Species :&#160;</string>
+    <string name="barcode_generation">Barcode\nGeneration</string>
+    <string name="tree_inventory">Tree\nInventory</string>
+    <string name="pistage">Pistage</string>
+    <string name="tree_felling">Tree Felling</string>
+    <string name="tree_pulling">Tree Pulling</string>
+    <string name="log_cutting">Log Cutting</string>
+    <string name="or">Or</string>
+    <string name="enter_tree_id">Enter Tree ID</string>
+    <string name="enter_felling_id">Enter Felling ID</string>
+    <string name="species">Species</string>
+    <string name="dia_cm">Dia (cm)</string>
+    <string name="concession">Concession / UFA</string>
+    <string name="ufg">UFG</string>
+    <string name="tree_id">Tree ID</string>
+    <string name="user_info">User Info</string>
+    <string name="data_time"><![CDATA[Date & Time]]></string>
+    <string name="barcodeScannerButton">barcodeScannerButton</string>
+    <string name="ufa">UFA</string>
+    <string name="total_number_of_barcode">Total Number of Barcode</string>
+    <string name="copies">Copies</string>
+    <string name="no_of_parcel">Parcel No</string>
+    <string name="tree_details">Tree Details</string>
+    <string name="failed_to_get_current_location">Failed to get Current GPS Location</string>
+    <string name="gps_in_need_message">GPS Location is needed for this action. Please turn on the Device GPS from Settings</string>
+
+</resources>

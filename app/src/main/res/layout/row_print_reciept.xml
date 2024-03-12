@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/parentView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_5sdp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        >
+        <ImageView
+            android:id="@+id/ivBarcode"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/txtBardCodeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1100"
+           />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/txtBCLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/txtBCEssense"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+                android:text=""/>
+            <TextView
+                android:id="@+id/txtBCForest"
+                android:text=""
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/txtBCTransporter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+            android:id="@+id/txtBCAAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:layout_weight="1"
+                android:visibility="gone"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000"
+            />
+
+            <TextView
+                android:id="@+id/txtBCOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="gone"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/txtbcDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+               />
+
+            <TextView
+                android:id="@+id/txtBCLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+               />
+            <TextView
+                android:id="@+id/txtBCCBM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/gray_1000"
+                android:text=""/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp">
+        <CheckBox
+            android:id="@+id/chkFSC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="FSC"
+            android:checked="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000" />
+        <CheckBox
+            android:id="@+id/chkFSCClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="FSC"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000" />
+        <CheckBox
+            android:id="@+id/chkBCNoFSCClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Non FSC"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000" />
+        <CheckBox
+            android:id="@+id/chkBCNoFSC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:text="Non FSC"
+            android:checked="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000"
+            android:text="Date:"/>
+
+        <TextView
+            android:id="@+id/txtBCDate"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/gray_1000" />
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
